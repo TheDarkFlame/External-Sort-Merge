@@ -40,7 +40,7 @@ void write_out(pairvector & input, string filename){
 
 bool custom_compare_function(pair<int, int>arg1, pair<int, int>arg2){//returns true if arg1>arg2
 	if (arg1.first == arg2.first)
-		return arg1.second > arg2.second;
+		return arg1.second < arg2.second;
 	else return arg1.first > arg2.first;
 }
 
